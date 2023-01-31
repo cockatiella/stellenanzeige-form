@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stellenanzeige</title>
+</head>
+<body>
+    <div class="container">
+    <form action="post.php" method="post">
+        <label for="Vakanzbezeichnung"></label>
+        <input type="text" name="jobtitle" id="jobtitle" placeholder="Vakanzbezeichnung" required>    
+        </label>
+        <br>
+        <label for="jobcompany"></label>
+        
+        <input type="text" name="jobcompany" id="jobcompany" placeholder="Firma" required>
+        <br>
+        <br>
+        <textarea name="jobdescription" id="jobdescription" cols="30" rows="10" placeholder="Job Description" required></textarea>
+        <br>
+        <label for="joblocation">Niederlassung</label>
+        <input type="text" name="joblocation" id="joblocation" placeholder="Job Location" required>
+        <br>
+        <!-- adresse und pz -->
+        <label for="jobaddress"></label>
+        <input type="text" name="jobaddress" id="jobaddress" placeholder="Adresse" required>
+        <br>
+        <label for="jobzip"></label>
+        <input type="text" name="jobzip" id="jobzip" placeholder="PLZ" required>
+        <br>
+        <label for="jobcity"></label>
+        <input type="text" name="jobcity" id="jobcity" placeholder="Stadt" required>
+        <br>
+        <label for="jobcontact"></label>
+        <input type="text" name="jobcontact" id="jobcontact" placeholder="Ansprechpartner" required>
+        <br>
+        <label for="jobcontactemail"></label>
+        <input type="email" name="jobcontactemail" id="jobcontactemail" placeholder="Ansprechpartner Email" required>
+        <br>
+        <label for="jobcontactphone"></label>
+        <input type="tel" name="jobcontactphone" id="jobcontactphone" placeholder="Ansprechpartner Telefon" required>
+        <br>
+        <label for="jobtype">Art der Job</label>
+        <select name="jobtype" id="jobtype" required>
+            <option value="Full Time">Vollzeit</option>
+            <option value="Part Time">Part Time</option>
+            <option value="Contract">Contract</option>
+            <option value="Internship">Internship</option>
+            <option value="Temporary">Temporary</option>
+        </select>
+        <br>
+        <label for="jobcategory">Job Category</label>
+        <select name="jobcategory" id="jobcategory" required>
+            <option value="Accounting">Accounting</option>
+            <option value="Banking">Banking</option>
+            <option value="Business Development">Business Development</option>
+            <option value="Customer Service">Customer Service</option>
+            <option value="Design">Design</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Finance">Finance</option>
+            <option value="Human Resources">Human Resources</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Legal">Legal</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Operations">Operations</option>
+            <option value="Product Management">Product Management</option>
+            <option value="Project Management">Project Management</option>
+            <option value="Purchasing">Purchasing</option>
+            <option value="Quality Assurance">Quality Assurance</option>
+            <option value="Research">Research</option>
+            <option value="Sales">Sales</option>
+            <option value="Support">Support</option>
+        </select>
+        <br>
+        <label for="jobwebsite">Website</label>
+        <input type="url" name="jobwebsite" id="jobwebsite" placeholder="Website" required>
+        <br>
+        <label for="joblogo">Logo</label>
+        <input type="file" name="joblogo" id="joblogo" placeholder="Logo" required>
+        <br>
+        <label for="jobdate">Datum</label>
+        <input type="date" name="jobdate" id="jobdate" placeholder="Date" required>
+        <br>
+        <label for="jobstatus">Status</label>
+        <select name="jobstatus" id="jobstatus" required>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select>
+        <br>
+        <label for="jobminsalary">Mindestgehalt</label>
+        <input type="number" name="jobminsalary" id="jobminsalary" placeholder="Mindestgehalt" required>
+        <br>
+        <label for="jobmaxsalary">Maximalgehalt</label>
+        <input type="number" name="jobmaxsalary" id="jobmaxsalary" placeholder="Maximalgehalt" required>
+        <br>
+        <label for="jobtags">Tags</label>
+        <input type="text" name="jobtags" id="jobtags" placeholder="Tags" required>
+        <br>
+
+        <input type="submit" value="Submit" class="btn">
+    </form>
+
+
+    </div>
+</body>
+</html>
